@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="html">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="second.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <script src="https://kit.fontawesome.com/7414e22221.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <title>LEARNINGBOX WEBSITE </title>
-</head>
-    <body>        
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-            </label>
-            <label class="logo">DesignBoX</label>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Blogs</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="third.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <script src="https://kit.fontawesome.com/7414e22221.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <title>BOX </title>
+    </head>
+    <body>
+        <!-- Nav bar starts here  -->
+        <nav class="navbar">
+            <div class="brand-title">
+                DesignBoX
+            </div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#"><button>Contact us</button></a></li>
+                </ul>
+            </div>
         </nav>
-      
+        <!-- Nav bar ends here  -->
 
         <!-- first main course starts here -->
 
-        <section data-aos="zoom-in-up" data-aos-duration="4000" class="firstcourses">
+        <section class="firstcourses">
             <div class="firstcourse-row">
                 <div class="firstcourse-left-col">
                     <div class="firstcourse-text">
@@ -48,7 +54,7 @@
 
         <!-- about application start here -->
 
-        <section id="about" data-aos="fade-right">
+        <section id="about" >
             <div class="about-left-col">
                 <img src="./images/silver.jpeg">
             </div>
@@ -67,7 +73,7 @@
         <!--  course starts here -->
 
 
-        <section class="courses" data-aos="fade-left">
+        <section class="courses" >
             <div class="course-row">
                 <div class="course-left-col">
                     <div class="course-text">
@@ -86,7 +92,7 @@
 
         <!-- features start here -->
 
-        <section id="features" data-aos="zoom-in-down">
+        <section id="features">
             <h1>Perspective of Planning</h1>
             <div class="feature-row">
                 <div class="feature-col">
@@ -124,9 +130,10 @@
 
         <!-- features ends here -->
 
-        <!-- another about application starts here -->
 
-        <section id="back" data-aos="fade-left">
+         <!-- another about application starts here -->
+
+         <section id="back">
             <div class="back-about-left-col">
                 <img src="./images/about.jpeg">
             </div>
@@ -141,7 +148,7 @@
 
         <!-- another about application ends here -->
 
-         <!--clients starts here-->
+        <!--clients starts here-->
 
     <section  class="clients">
         <div>
@@ -156,45 +163,47 @@
 
     <!--clients ends here-->
 
-        <!-- Profile card starts here -->
 
-        <div class="container" data-aos="zoom-in">
-            <h1>Our Team</h1>
-            <main class="grid">
-                <article>
-                    <img src="./images/profile12.jpeg" alt="profile1">
-                    <div class="text">
-                        <h3>KEVIN</h3>
-                        <p>Hi,there! I am Kevin and I am the Co-founder of this company.</p>
-                        <button>View Profile</button>
-                    </div>
-                </article>
 
-                <article>
-                    <img src="./images/profile2.jpeg" alt="profile2">
-                    <div class="text">
-                        <h3>BEN</h3>
-                        <p>Hi,there! I am Kevin and I am the Co-founder of this company.</p>
-                        <button>View Profile</button>
-                    </div>
-                </article>
+     <!-- Profile card starts here -->
+<!-- 
+     <div class="container" >
+        <h1>Our Team</h1>
+        <main class="grid">
+            <article>
+                <img src="./images/profile12.jpeg" alt="profile1">
+                <div class="text">
+                    <h3>KEVIN</h3>
+                    <p>Hi,there! I am Kevin and I am the Co-founder of this company.</p>
+                    <button>View Profile</button>
+                </div>
+            </article>
 
-                <article>
-                    <img src="./images/profile3.jpeg" alt="profile3">
-                    <div class="text">
-                        <h3>PICOLO</h3>
-                        <p>Hi,there! I am Kevin and I am the advisor of this company.</p>
-                        <button>View Profile</button>
-                    </div>
-                </article>
-            </main>
-        </div>
+            <article>
+                <img src="./images/profile2.jpeg" alt="profile2">
+                <div class="text">
+                    <h3>BEN</h3>
+                    <p>Hi,there! I am Kevin and I am the Co-founder of this company.</p>
+                    <button>View Profile</button>
+                </div>
+            </article>
 
-        <!-- Profile card ends here -->
+            <article>
+                <img src="./images/profile3.jpeg" alt="profile3">
+                <div class="text">
+                    <h3>PICOLO</h3>
+                    <p>Hi,there! I am Kevin and I am the advisor of this company.</p>
+                    <button>View Profile</button>
+                </div>
+            </article>
+        </main>
+    </div> -->
 
-     <!--get in touch starts here-->
+    <!-- Profile card ends here -->
 
-     <section class="new-section" data-aos="zoom-out-down">
+    <!--get in touch starts here-->
+
+    <section class="new-section" >
         <div class="contact-section">
            <div class="contact-info">
                <div><i class="fas fa-map-marker-alt"></i>Address, City, Country</div>
@@ -217,47 +226,29 @@
     <!--get in touch ends here-->
 
 
-   <!--footer starts here-->
-    <footer>
-        <div class="footer" data-aos="zoom-in-down">
-            <div class="boxes">
-                <h2>LearningBoX</h2>
-                <p>Best Platform to learn, explore and growup your skills in Practicing basis.</p>
-            </div>
-            <div class="boxes">
-                <p>Home</p><br>
-                <p>Products</p><br>
-                <p>Services</p><br>
-                <p>Blogs</p><br>
-                <p>Contact Us</p><br>
-            </div>
-            <div class="boxes">
-                <p>Blog</p><br>
-                <p>Pricing</p><br>
-                <p>Sales</p><br>
-                <p>Certification</p><br>
-                <p>Customer Service</p><br>
-            </div>
-            <div class="boxes">
-                <p>ADDRESS:</p><br>
-                <p>47,Main Road,Guindy</p><br>
-                <p>Chennai-600089</p><br>
-                <p>LearningBoX@gmail.com</p><br>
-                <p>+91 0000000000</p><br>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>copyright &copy; 2021 LearningBoX.</p>
-        </div>
-    </footer>
+    <!--footer starts here-->
+   
 
     
     <!--footer ends here-->
-<!--  AOS-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
 
+
+
+        <!-- Nav bar js.starts here  -->
+        <script>   
+            const toggleButton = document.getElementsByClassName('toggle-button')[0]
+            const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+            toggleButton.addEventListener('click',() => {
+                navbarLinks.classList.toggle('active')
+            })
+        </script>
+         <!-- Nav bar js.ends here  -->
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
-</html>    
+
+</html>
