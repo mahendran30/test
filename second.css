@@ -1,0 +1,621 @@
+
+* {
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;  
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    
+}
+body h1{
+    font-size:45px
+}
+body h4{
+    font-size:30px;
+}
+body p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* nav starts here */
+header nav, ul{
+    color:whitesmoke;
+}
+nav{
+    background-color: royalblue;
+    height:80px;
+    width: 100%;
+}
+label.logo{
+    color:white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float:right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+    list-style: none;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color:white;
+    float:right;
+    line-height: 80px;
+    margin-right:40px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+@media (max-width: 1500px){
+    .checkbtn{
+        display:block;
+        overflow: hidden;
+    }
+    ul{
+        position: absolute;
+        width: 100%;
+        height:60vh;
+        background-color: #2c3e50;
+        top:80px;
+        left:100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover, a.active{
+        background:none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+
+/* nav ends here */
+
+/* first main course starts here */
+#firstcourses{
+    padding: 100px 0;
+}
+.firstcourse-row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: royalblue;
+    color:whitesmoke;
+}
+.firstcourse-right-col{
+    flex-basis: 50%;
+    margin-bottom:70px;
+}
+.firstcourse-right-col img{
+    width:100%;
+
+}
+.firstcourse-left-col{
+    flex-basis: 50%;
+    text-align: center;
+    margin-bottom:70px;
+  
+}
+.firstcourse-text{
+    max-width: 800px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.firstcourse-text h1{
+    color:yellow;
+}
+.firstcourse-text p{
+    margin-top: 15px;
+    line-height: 2rem;
+}
+
+.btn{
+    position: relative;
+    top:10px;
+    padding:70px 70px;
+    outline: none;
+    background: transparent;
+    border-radius: 30px;
+    font-weight: bolder;
+    transition: 0.1s;
+    border: 1px solid yellowgreen;
+    color: yellow;
+    font-size:large;
+    text-transform: uppercase;
+}
+.btn:hover{
+    background:#e91e63;
+    color:#fff;
+    border-color:#e91e63;
+    box-shadow: inset 0 0 5px yellowgreen,
+                inset 0 0 10px yellowgreen,
+                      0 0 15px yellowgreen,
+                      0 0 20px yellowgreen,
+}
+.firstcourse-row .btn{
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+
+/* last main course ends here */
+
+
+/* about application starts here*/
+
+#about{
+    padding:100px 0px; 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:silver;
+}
+.about-left-col{
+    flex-basis: 50%;
+
+}
+.about-left-col img{
+    width:100%;
+}
+.about-right-col{
+    flex-basis:50%;
+    text-align:center;
+}
+.about-text{
+    max-width: 800px;
+    margin-right: 10px;
+    margin-left: 30px;
+    display: inline-block;
+}
+.about-text p{
+    line-height: 2rem; 
+}
+
+/* about application ends here*/
+
+/* courses starts here */
+#courses{
+    padding: 100px 0;
+}
+.course-row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(102, 102, 231);
+    color:whitesmoke;
+}
+.course-right-col{
+    flex-basis: 50%;
+}
+.course-right-col img{
+    width:100%;
+}
+.course-left-col{
+    flex-basis: 50%;
+    text-align: center;
+}.course-text{
+    max-width: 800px;
+    margin-left: 10px;
+    display: inline-block;
+}
+.course-text p{
+    margin-top: 30px;
+    line-height: 2rem;
+}
+.course-text h4{
+    margin-top: 30px;
+}
+
+
+/* courses ends here */
+
+/* features start here */
+
+#features{
+    padding-top:50px;
+    padding-bottom:50px;
+    background-color: rgb(253, 254, 255);
+}
+#features h1{
+    text-align: center;
+    padding-bottom: 30px;
+    color:#242A56;
+}
+.feature-row{
+    width:80%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+.feature-col{
+    flex-basis: 50%;
+    text-align:center;
+}
+.feature-col img{
+    width: 100px;
+}
+.feature-col h4{
+    margin-bottom: 15px;
+    font-size:20px;
+    font-weight: 700;
+    color:#242A56;
+}
+.feature-col P{
+    color:rgb(4, 73, 100);
+    line-height: 1.2rem;
+}
+
+/* features ends here */
+
+/* another about application starts here */
+#back{
+    padding:100px 0px; 
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:silver;
+    
+}
+.back-about-left-col{
+    flex-basis: 50%;
+    
+
+}
+.back-about-left-col img{
+    width:100%;
+
+}
+.back-about-right-col{
+    flex-basis:50%;
+    text-align:center;
+}
+.back-about-text{
+    max-width: 800px;
+    margin-right: 10px;
+    margin-left: 30px;
+    display: inline-block;
+  
+}
+.back-about-text p{
+    line-height: 2rem; 
+}
+
+
+/* another about application ends here */
+
+/*clients starts here*/
+
+.clients{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background-color: #4169E1;
+}
+.clients div{
+    padding:20px;
+    margin:auto;
+    overflow: hidden;
+    max-width: 1200px;
+    line-height: 2em;
+}
+.clients h1{
+    margin-top: 10px;
+    color:yellow;
+}
+.clients img{
+    width: 350px;
+    padding:0 30px;
+}
+.clients p{
+    margin-top: 10px;
+    font-size:20px;
+    color: whitesmoke;
+}
+
+/*clients ends here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Profile card starts here */
+.container h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.grid{
+    margin: 80px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    align-items: center;
+}
+.grid > article{
+    background: #eee5e9;
+    border: none;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    border-radius: 20px;
+    text-align: center;
+    width: 250px;
+    transition: transform .3s;
+}
+.grid > article:hover{
+    transform: translateY(5px);
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.3);
+}
+
+.grid > article img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+}
+.text{
+    padding:0px 20px 20px;
+}
+.text p{
+    font-weight: 400;
+    font-size: 15px;
+}
+.text button{
+
+    background: #ef6f6c;
+    border-radius: 20px;
+    border: none;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+@media (max-width: 700px)
+{
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 500px){
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .grid > article{
+        text-align:center;
+    }
+}
+
+
+/* Profile card ends here */
+
+
+/*get in touch starts here*/
+
+.new-section{
+    min-height: 100vh;
+    background:#FFBD2e; 
+    background-size: cover;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;/*everything will align in center*/
+}
+.contact-info{
+    color:#fff;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size:18px;
+}
+.contact-info i{
+    margin-left: 20px;
+    font-size:25px;
+}
+.contract-form{
+    max-width: 700px;
+    margin-right: 50px;
+
+}
+.contact-info, .contract-form{
+    flex:1;
+}
+
+.contact-form h2{
+    color:#fff;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px
+}
+.contact-form .text-box{
+    background: #000;
+    color:#fff;
+    border:none;
+    width: calc(50% -10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .text-box:first-child{
+    margin-right: 15px;
+}
+
+.contact-form textarea{
+    background:#000;
+    color:#fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .send-btn{
+    float: right;
+    background: #2E94E3;
+    color:#fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size:15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  
+}
+
+.contact-form .send-btn:hover{
+    background: #0582E3;
+}
+
+@media screen and (max-width: 950px){
+    .contact-section{
+        flex-direction:column;
+    }
+    .contact-info, .contact-form{
+        margin: 30px 50px;
+    }
+    .contact-form h2{
+        font-size: 30px;
+    }
+    .contact-form .text-box{
+        width: 100%;
+    }
+}
+
+/*get in touch ends here*/
+
+
+
+/*  footer starts here */
+
+footer{
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: #4169E1;
+    height: auto;
+    width:100vw;
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer{
+    width: 100%;
+    height: auto;
+    background: #4169E1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow:wrap;
+}
+.boxes{
+    width: 20%;
+    height:200px;
+    background: #4169E1;
+    margin: 10px;
+    box-sizing: border-box;
+    font-size:20px;     
+}
+.boxes p{
+    font-size:14px;
+}
+.boxes h2{
+    margin-bottom: 30px;
+}
+.footer-bottom{
+    text-align: center;
+ 
+}
+.footer-bottom p{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+@media screen and (max-width: 1200px){
+    .boxes{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 600px){
+    .box{
+        width:40%;
+    }
+}
+
+/*footer ends here*/
